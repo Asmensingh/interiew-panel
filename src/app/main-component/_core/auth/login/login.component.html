@@ -1,0 +1,51 @@
+<div class="login">
+    <img src="assets/img/login-b.jpg" alt="" width="100%" height="593px">
+    <div class="centered">
+        <div class="login_form">
+            <h3>Login Form</h3>
+            <div class="container">
+                <div class="row">
+                    <form>
+                        <div>
+                            <div class="form-group">
+                                <label for="username">UserName</label>
+                                <input type="text" class="form-control" id="username" formControlName="username">
+                                <!-- <span class="help-block"
+                                        *ngIf="!SignupForm.get('userData.username').valid&&SignupForm.get('userData.username').touched">
+                                        <span *ngIf="SignupForm.get('userData.username').errors['nameIsForbidden']">name
+                                            is invalid</span>
+                                        <span *ngIf="SignupForm.get('userData.username').errors['required']">field is
+                                            required</span>
+                                    </span> -->
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" formControlName="email">
+
+                                <!-- <span class="help-block"
+                                        *ngIf="!SignupForm.get('userData.email').valid && SignupForm.get('userData.email').touched">
+                                        please enter a valid email id
+                                    </span> -->
+                            </div>
+                            <div class="form-group">
+                                <a href="#">Forgot password ? </a>
+                            </div>
+                        </div>
+                        <form class="example-form">
+                            <mat-form-field class="example-full-width" appearance="fill">
+                              <mat-label>Number</mat-label>
+                              <input type="text"
+                                     placeholder="Pick one"
+                                     aria-label="Number"
+                                     matInput
+                                     [formControl]="myControl"
+                                     >
+                            </mat-form-field>
+                          </form>
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
