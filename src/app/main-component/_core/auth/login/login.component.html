@@ -2,14 +2,14 @@
     <img src="assets/img/login-b.jpg" alt="" width="100%" height="593px">
     <div class="centered">
         <div class="login_form">
-            <h3>Login Form</h3>
+            <h3>User Login</h3>
             <div class="container">
                 <div class="row">
                     <form>
                         <div>
                             <div class="form-group">
                                 <label for="username">UserName</label>
-                                <input type="text" class="form-control" id="username" formControlName="username">
+                                <input type="text" class="form-control" id="username" formControlName="username" placeholder="Please enter username">
                                 <!-- <span class="help-block"
                                         *ngIf="!SignupForm.get('userData.username').valid&&SignupForm.get('userData.username').touched">
                                         <span *ngIf="SignupForm.get('userData.username').errors['nameIsForbidden']">name
@@ -19,8 +19,8 @@
                                     </span> -->
                             </div>
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" formControlName="email">
+                                <label for="email">Password</label>
+                                <input type="password" class="form-control" id="password" formControlName="password" placeholder="Please enter username">
 
                                 <!-- <span class="help-block"
                                         *ngIf="!SignupForm.get('userData.email').valid && SignupForm.get('userData.email').touched">
@@ -31,19 +31,11 @@
                                 <a href="#">Forgot password ? </a>
                             </div>
                         </div>
-                        <form class="example-form">
-                            <mat-form-field class="example-full-width" appearance="fill">
-                              <mat-label>Number</mat-label>
-                              <input type="text"
-                                     placeholder="Pick one"
-                                     aria-label="Number"
-                                     matInput
-                                     [formControl]="myControl"
-                                     >
-                            </mat-form-field>
-                          </form>
                         <button class="btn btn-primary" type="submit">Submit</button>
                     </form>
+                </div>
+                <div class="form-group1">
+                    <span>Need an account ?  </span><a [routerLink]="['/login']"> Sign In </a>
                 </div>
             </div>
         </div>
