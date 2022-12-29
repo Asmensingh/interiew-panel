@@ -32,4 +32,4 @@ import { FormsModule } from '@angular/forms';
     MatIconModule
   ],
 })
-export class AngularMaterialModule { }
+export class AngularMaterialDependenciesModule { }

@@ -3,9 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AngularMaterialModule } from './angularMaterial/angular-material/angular-material.module'
-import { NavBarComponent } from './main-component/_common/nav-bar/nav-bar.component';
-import { AuthModule } from './main-component/_core/auth/auth.module';
+import { AngularMaterialDependenciesModule } from './angular-material-dependencies/angular-material-dependencies.module'
+import { NavBarComponent } from './component/_common/nav-bar/nav-bar.component';
+import { AuthModule } from './component/_core/auth/auth.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +14,7 @@ import { AuthModule } from './main-component/_core/auth/auth.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularMaterialModule,
+    AngularMaterialDependenciesModule,
     AuthModule
   ],
   providers: [],

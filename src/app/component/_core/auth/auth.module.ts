@@ -4,7 +4,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AuthRoutingModule } from './auth-routing.module';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { AngularMaterialModule } from 'src/app/angularMaterial/angular-material/angular-material.module';
+import { AngularMaterialDependenciesModule } from 'src/app/angular-material-dependencies/angular-material-dependencies.module';
 
 
 @NgModule({
@@ -17,7 +17,7 @@ import { AngularMaterialModule } from 'src/app/angularMaterial/angular-material/
     AuthRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    AngularMaterialModule
+    AngularMaterialDependenciesModule
   ]
 })
 export class AuthModule { }
